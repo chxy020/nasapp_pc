@@ -1,0 +1,114 @@
+{
+  "id": "2324138",
+  "name": "pcapp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19359380",
+      "name": "组 102",
+      "font_class": "zu102",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "19359381",
+      "name": "最大化",
+      "font_class": "zu100",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "19359386",
+      "name": "最小化",
+      "font_class": "zu99",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "19359418",
+      "name": "组 158",
+      "font_class": "zu158",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "19359423",
+      "name": "组 165",
+      "font_class": "zu165",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "19359425",
+      "name": "组 163",
+      "font_class": "zu163",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "19359436",
+      "name": "组 162",
+      "font_class": "zu162",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "19359438",
+      "name": "组 166",
+      "font_class": "zu166",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "19359439",
+      "name": "组 177",
+      "font_class": "zu177",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "19359444",
+      "name": "组 179",
+      "font_class": "zu179",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "19359451",
+      "name": "组 191",
+      "font_class": "zu191",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "19359453",
+      "name": "组 196",
+      "font_class": "zu196",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "19359455",
+      "name": "组 195",
+      "font_class": "zu195",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "19359456",
+      "name": "组 178",
+      "font_class": "zu178",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "19359475",
+      "name": "外网",
+      "font_class": "zu233",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    }
+  ]
+}

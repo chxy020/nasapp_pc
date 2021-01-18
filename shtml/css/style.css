@@ -1,0 +1,120 @@
+/*--------------------登录--------------------*/
+.login-div{
+    text-align: center;
+}
+.login-bt{
+height: 32px;
+background: #3691FF;
+}
+.login-a{
+height: 34px;
+font-size: 14px;
+font-family: Microsoft YaHei;
+/* font-weight: bold; */
+color: #909399;
+line-height: 34px;
+padding:24px 0;
+text-align: center;
+}
+.login-img img{
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+.login-b{
+    padding-top:30px
+}
+.login-b p{
+font-size: 14px;
+font-family: Microsoft YaHei;
+/* font-weight: bold; */
+color: #303133;
+line-height: 34px;
+}
+.login-b h3{
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    color: #303133;
+    line-height: 34px;
+    }
+.login-bt div{
+    float: right;
+    color: #fff;
+    margin-top:8px;
+    margin-right: 15px;
+    opacity: 0.8;
+}
+.login-bt div:hover{
+    opacity: 1;
+}
+/*--------------------已连接外网--------------------*/
+.choosebt{
+font-size: 16px;
+font-family: Microsoft YaHei;
+/* font-weight: bold; */
+color: #303133;
+line-height: 34px;
+text-align: center;
+padding:60px 0}
+.chooselist{padding-left: 35px;}
+.chooselist li{width: 160px;
+    height: 160px;
+    background: #FFFFFF;
+    border: 1px solid #3691FF;
+    border-radius: 8px;
+margin-right: 35px;
+margin-bottom: 35px;
+position: relative;
+float: left;
+}
+.chooselist li.on{
+    box-shadow: 0px 0px 10px #ccc;
+    /* box-shadow: 0px 0px 10px #3691FF; */
+}
+
+
+
+
+.chooselist li .a{
+    width: 85px;
+    height: 85px;
+    margin:30px auto 0;
+
+}
+.chooselist li .b{
+    position: absolute;
+    right:10px;
+    top:10px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #3691FF;
+}
+
+
+.chooselist li p{
+font-size: 14px;
+font-family: Microsoft YaHei;
+/* font-weight: bold; */
+color: #303133;
+line-height: 34px;
+margin-top: 10px;
+    }
+    .chooselist li p i{
+        color: #3691FF;
+        margin-right: 8px;
+    }
+.btnblue{
+    width: 230px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #3691FF;
+    border-radius: 4px;
+    color: #3691FF;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    text-align: center;
+    margin:60px auto 60px;
+}
