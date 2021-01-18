@@ -20,6 +20,7 @@ import { AppComponent } from './app.component';
 import { HttpService } from './shared/services/http/http.service';
 
 import './api';
+// import { NasListModule } from './routes/naslist/NasList.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -35,6 +36,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 		CoreModule,
 		SharedModule,
 		HomeModule,
+
+		// NasListModule,
+
+		
 		AppRoutingModule,
 		TranslateModule.forRoot({
 			loader: {

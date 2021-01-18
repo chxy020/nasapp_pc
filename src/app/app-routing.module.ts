@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ConsoleComponent } from './layout/console/console.component';
-import { LayoutModule } from './layout/layout.module';
+// import { ConsoleComponent } from './layout/console/console.component';
+// import { LayoutModule } from './layout/layout.module';
 import { PageNotFoundComponent } from './shared/components';
 
 const routes: Routes = [
@@ -11,19 +11,19 @@ const routes: Routes = [
 		pathMatch: 'full'
 	},
 
-	{
-		path: '',
-		component: ConsoleComponent,
-		children: [
-			{path:'login',loadChildren: () => import('./routes/login/login.module').then(m => m.LoginModule)},
-			{path:'naslist',loadChildren: () => import('./routes/naslist/NasList.module').then(m => m.NasListModule)}
-		]
-	},
+	// {
+	// 	path: '',
+	// 	component: ConsoleComponent,
+	// 	children: [
+	// 		{path:'login',loadChildren: () => import('./routes/login/login.module').then(m => m.LoginModule)},
+	// 		{path:'naslist',loadChildren: () => import('./routes/naslist/NasList.module').then(m => m.NasListModule)}
+	// 	]
+	// },
 
-	{
-		path: '**',
-		component: PageNotFoundComponent
-	}
+	// {
+	// 	path: '**',
+	// 	component: PageNotFoundComponent
+	// }
 
 	// {
 	// 	path: 'main',
@@ -151,7 +151,7 @@ const routes: Routes = [
 
 @NgModule({
 	imports: [
-		LayoutModule,
+		// LayoutModule,
 		// RouterModule.forRoot(routes)
 		RouterModule.forRoot(routes, { useHash: true })
 	],
