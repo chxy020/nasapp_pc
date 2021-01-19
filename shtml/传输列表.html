@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" charset="utf-8" href="css/reset.css">
+    <link rel="stylesheet" charset="utf-8" href="font/iconfont.css">
+    <link rel="stylesheet" charset="utf-8" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body style="position: relative;">
+<div class="index-bt">
+    <div class="iconfont icon-zu102"></div>
+    <div class="iconfont icon-zu100"></div>
+    <div class="iconfont icon-zu99"></div>
+</div>
+<div class="index-l">
+    <ul class="index-l-nav">
+        <li class="on"><span class="iconfont icon-weibiaoti-1"></span></li>
+        <li><span class="iconfont icon-zu166"></span></li>
+        <li><span class="iconfont icon-zu165"></span></li>
+    </ul>
+    <ul class="index-l-nav bottomnav">
+        <li class="on"><span class="iconfont icon-zu163"></span></li>
+        <li><span class="iconfont icon-zu162"></span></li>
+        <li><span class="iconfont icon-zu191"></span></li>
+    </ul>
+    <!-- 更多 -->
+    <!-- <div class="morePop" style="display: block;">
+        <div class="parinfo">
+            <div class="a"><img class="imgs" src="img/tongbu.png"></div>
+            <div class="b">
+                <h4>张三风</h4>
+                <p>139****3455</p>
+            </div>
+        </div>
+        <div class="shebeiinfo">
+            <div class="a">可用空间<span>2000G/1.56T</span></div>
+            <div class="progress">
+                <div></div>
+            </div>
+        </div>
+        <ul class="more-list">
+            <li class="more-items active-"><span class="iconfont icon-zu178"></span>切换设备</li>
+            <li class="more-items"><span class="iconfont icon-zu177"></span>显示加密文件</li>
+            <li class="more-items"><span class="iconfont icon-zu179"></span>退出登录</li>
+        </ul>
+    </div> -->
+</div>
+<div class="index-r" style="background: #F2F2F2;">
+    <ul class="tabul clearfix" id="nav">
+        <li tabid="1" class="on">上传中<span>39</span></li><!-- 超过99以上 显示99 -->
+        <li tabid="2">下载中</li>
+        <li tabid="3">已完成</li>
+        <li tabid="4">同步列表</li>
+    </ul>
+    <div id="contentBox">
+        <!-- 上传中 -->
+        <div class="box active">
+            <div style="height: calc(100vh - 128px);padding:48px 0">
+                <table class="table table3">
+                    <colgroup>
+                        <col width="40%">
+                        <col width="40%">
+                        <col width="20%">
+                    </colgroup>
+                    <tbody>
+                        <tr class="on">
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/zip.png">
+                                    <div class="name">
+                                        <p>1官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed">
+                                            <div class="down"></div>
+                                        </div>
+                                        <div class="texts l"><span class="iconfont icon-zu221"></span>0.98MB/s</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">暂停</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/mp3.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed green">
+                                            <div class="down green"></div>
+                                        </div>
+                                        <div class="texts">已暂停</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">开始</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>zzz官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="height: 48px;"></div>
+            </div>
+            <!-- 底部 -->
+            <div class="down-bottom">
+                <div class="top">
+                    <div class="left">
+                        <div class="basebtns">全部开始</div>
+                        <div class="basebtns failure">全部暂停</div>
+                        <div class="basebtns">全部删除</div>
+                    </div>
+                    <div class="right">
+                        <div class="b1">
+                            <span class="iconfont icon-zu111"></span><span class="iconfont icon-zu112"></span>传输完毕，自动关机
+                        </div>
+                        <div class="line"></div>
+                        <div class="b2">
+                            <span class="iconfont icon-zu221"></span>0B/s
+                        </div>
+                        <div class="b3">
+                            <span class="iconfont icon-zu222"></span>0B/s
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 下载中 -->
+        <div class="box">
+            <div style="height: calc(100vh - 128px);padding:48px 0">
+                <table class="table table3">
+                    <colgroup>
+                        <col width="40%">
+                        <col width="40%">
+                        <col width="20%">
+                    </colgroup>
+                    <tbody>
+                        <tr class="on">
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/zip.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed">
+                                            <div class="down"></div>
+                                        </div>
+                                        <div class="texts l"><span class="iconfont icon-zu222"></span>0.98MB/s</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">暂停</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/mp3.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed green">
+                                            <div class="down green"></div>
+                                        </div>
+                                        <div class="texts">已暂停</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">开始</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="down-td-1">
+                                    <img class="imgs" src="img/text.png">
+                                    <div class="name">
+                                        <p>官网.rar</p>
+                                        <span>6.81MB/33.99MB</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-2">
+                                    <div class="cont">
+                                        <div class="speed red">
+                                            <div class="down red"></div>
+                                        </div>
+                                        <div class="texts">失败</div>
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="down-td-4">
+                                    <div class="btns curr">重试</div>
+                                    <div class="btns">删除</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 底部 -->
+            <div class="down-bottom">
+                <div class="top">
+                    <div class="left">
+                        <div class="basebtns">全部开始</div>
+                        <div class="basebtns failure">全部暂停</div>
+                        <div class="basebtns">全部删除</div>
+                    </div>
+                    <div class="right">
+                        <div class="b1">
+                            <span class="iconfont icon-zu111"></span><span class="iconfont icon-zu112"></span>传输完毕，自动关机
+                        </div>
+                        <div class="line"></div>
+                        <div class="b2">
+                            <span class="iconfont icon-zu221"></span>0B/s
+                        </div>
+                        <div class="b3">
+                            <span class="iconfont icon-zu222"></span>0B/s
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 已完成 -->
+        <div class="box">
+            <table class="table table3">
+                <colgroup>
+                    <col width="40%">
+                    <col width="40%">
+                    <col width="20%">
+                </colgroup>
+                <tbody>
+                    <tr class="on">
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/zip.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span><span class="iconfont icon-zu221"></span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2">
+                                <div class="cont bigt">
+                                    2020/06/03 15:20
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="btns">查看</div>
+                                <div class="btns">清空记录</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/mp3.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span><span class="iconfont icon-zu222"></span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2">
+                                <div class="cont bigt">
+                                    2020/06/03 15:20
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="btns">查看</div>
+                                <div class="btns">清空记录</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/text.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span><span class="iconfont icon-zu221"></span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2">
+                                <div class="cont bigt">
+                                    2020/06/03 15:20
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="down-td-4">
+                                    <div class="btns">查看</div>
+                                    <div class="btns">清空记录</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 底部 -->
+            <div class="down-bottom">
+                <div class="top">
+                    <div class="left">
+                        <div class="basebtns">全部清空</div>
+                    </div>
+                    <div class="right">
+                        <div class="b1">
+                            3条记录
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 同步列表 -->
+        <div class="box">
+            <table class="table table3">
+                <colgroup>
+                    <col width="40%">
+                    <col width="40%">
+                    <col width="20%">
+                </colgroup>
+                <tbody>
+                    <tr class="on">
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/zip.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2 curr">
+                                <div class="cont">
+                                    <div class="tb curr">
+                                        <span class="iconfont icon-zu229"></span>文件正在同步
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="b2">
+                                    <span class="iconfont icon-zu221"></span>0B/s
+                                </div>
+                                <div class="b3">
+                                    <span class="iconfont icon-zu222"></span>0B/s
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/zip.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2 curr">
+                                <div class="cont">
+                                    <div class="tb curr">
+                                        <span class="iconfont icon-zu230"></span>同步已经暂停
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="b2">
+                                    <span class="iconfont icon-zu221"></span>0B/s
+                                </div>
+                                <div class="b3">
+                                    <span class="iconfont icon-zu222"></span>0B/s
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/mp3.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2 curr">
+                                <div class="cont">
+                                    <div class="tb">
+                                        <span class="iconfont icon-zu231"></span>同步完成  2020/07/22  12:20
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="btns">打开</div>
+                                <div class="btns">目录</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="down-td-1">
+                                <img class="imgs" src="img/text.png">
+                                <div class="name">
+                                    <p>官网.rar</p>
+                                    <span>6.81MB/33.99MB</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-2 curr">
+                                <div class="cont">
+                                    <div class="tb">
+                                        <span class="iconfont icon-zu231"></span>同步完成  2020/07/22  12:20
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="down-td-4">
+                                <div class="btns">打开</div>
+                                <div class="btns">目录</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 底部 -->
+            <div class="down-bottom">
+                <div class="top">
+                    <div class="left">
+                        <div class="basebtns">暂停同步</div>
+                        <div class="basebtns">清空记录</div>
+                        <div class="basebtns">开始同步</div>
+                        <div class="basebtns failure2"><span class="iconfont icon-zu229"></span>文件正在同步</div>
+                        <div class="basebtns failure2">所有文件已同步</div>
+                        <div class="down-bottomt">已同步1009个</div>
+                    </div>
+                    <div class="right">
+                        <div class="b1">
+                            <span class="iconfont icon-zu111"></span><span class="iconfont icon-zu112"></span>传输完毕，自动关机
+                        </div>
+                        <div class="line"></div>
+                        <div class="b2">
+                            <span class="iconfont icon-zu221"></span>0B/s
+                        </div>
+                        <div class="b3">
+                            <span class="iconfont icon-zu222"></span>0B/s
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+    $("#nav li").off("click").on("click",function(){
+        var index = $(this).index();
+        $(this).addClass("on").siblings().removeClass("on");
+        $("#contentBox .box").eq(index).addClass("active").siblings().removeClass("active");
+    });
+});
+</script>
+</body>
+</html>

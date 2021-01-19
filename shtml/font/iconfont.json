@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "13906640",
+      "name": "返 回",
+      "font_class": "right-arrow",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "19523555",
+      "name": "返 回",
+      "font_class": "left-arrow",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "19359469",
+      "name": "组 230",
+      "font_class": "zu230",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "19359468",
+      "name": "组 231",
+      "font_class": "zu231",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "19359471",
+      "name": "组 229",
+      "font_class": "zu229",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
       "icon_id": "19359458",
       "name": "组 204",
       "font_class": "zu204",

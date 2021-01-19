@@ -459,38 +459,80 @@
     </div>
 </div>
 
-<!-- 全屏弹窗 二维码-->
-<div class="fade-qr-main" style="display: none;">
-    <div class="qr-cont">
-        <p class="title">使用AI存储手机APP<br>扫码解锁显示加密文件夹</p>
-        <img src="./img/erweima.png" class="qr-img" alt="">
-    </div>
-</div>
-
-<!-- 弹窗  公用错误提示-->
-<div class="fade-qr-main2" style="display: none;">
-    <div class="fade-cont">
-        解锁失败，请重试
-    </div>
-</div>
-<!-- 弹窗  公用文字提示弹窗 -->
-<div class="fade-c-main" style="display: none;">
-    <div class="fade-c-cont">
-        <p class="title">退出</p>
-        <p class="content">您要退出当前账号吗？</p>
-        <div class="btns-c">
-            <div class="btn-itme left-btn">确定</div>
-            <div class="btn-itme right-btn">取消</div>
+<!-- 弹窗  移动弹框 -->
+<div class="fade-c-main" style="display: none-;">
+    <div class="fade-c-cont2">
+        <div class="title">
+            <div class="titleBtn">
+                <span class="iconfont icon-left-arrow left"></span>
+                <span class="iconfont icon-right-arrow right failure"></span>
+            </div>
+            请选择目标目录
+        </div>
+        <div class="index-daohang fade-c-cont2pop">
+            <a href="#">全部文件</a> > <a href="#">产品课程</a> > <span>0101【重要】课程寄语</span>
+        </div>
+        <table class="table table2">
+            <colgroup>
+                <col>
+                <col width="140">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>文件名</th>
+                    <th>修改时间</th>
+                </tr> 
+            </thead>
+        </table>
+        <div style="height: 227px;overflow-y:auto;margin-top:-1px">
+            <table class="table table2">
+                <colgroup>
+                    <col>
+                    <col width="140">
+                </colgroup>
+                <tbody>
+                    <tr class="on">
+                        <td>
+                            <div class="info_t">
+                                <img class="imgs" src="img/wjj.png">
+                                <input class="newinput" type="text" name="" value="" placeholder="新建文件夹" id=""/>
+                            </div>
+                        </td>
+                        <td>
+                            2020/06/03  15:20
+                        </td>
+                    </tr>
+                    <tr class="on">
+                        <td>
+                            <div class="info_t">
+                                <img class="imgs" src="img/tongbu.png">0101【重要】课程寄语
+                            </div>
+                        </td>
+                        <td>
+                            2020/06/03  15:20
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="info_t">
+                                <img class="imgs" src="img/tongbu.png">0101【重要】课程寄语
+                            </div>
+                        </td>
+                        <td>
+                            2020/06/03  15:20
+                        </td>
+                    </tr>
+                </tbody>
+            </table>           
+        </div>
+        <div class="botbtn">
+            <div class="basebtns wauto">新建文件夹</div>
+            <div class="botbtnR">
+                <div class="basebtns">取消</div>
+                <div class="basebtns basebtns-blue">移动</div>
+            </div>
         </div>
     </div>
-</div>
-<!-- 弹窗 鼠标右键菜单 -->
-<div class="select-block-s" style="display: block;left:200px;top:300px">
-    <ul class="select-list-s">
-        <li class="select-items-s active-">上传文件</li>
-        <li class="select-items-s">新建文件夹</li>
-        <li class="select-items-s">刷新</li>
-    </ul>
 </div>
 </body>
 </html>

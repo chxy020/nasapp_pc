@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" charset="utf-8" href="css/reset.css">
+    <link rel="stylesheet" charset="utf-8" href="font/iconfont.css">
+    <link rel="stylesheet" charset="utf-8" href="css/style.css">
+    <link rel="stylesheet" charset="utf-8" href="css/drop-down.css"><!--下拉菜单美化-->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script><!--下拉菜单美化-->
+    <script type="text/javascript" src="js/select-widget-min.js"></script><!--下拉菜单美化-->
+    <script type="text/javascript">
+        // <!--下拉菜单美化-->
+        $(document).ready(function(){		
+            $(".ui-select").selectWidget({
+                change       : function (changes) {
+                    return changes;
+                },
+                effect       : "slide",
+                keyControl   : true,
+                speed        : 200,
+                scrollHeight : 260
+            });
+        });		
+    </script>
+</head>
+<body style="position: relative;">
+<div class="index-bt">
+    <div class="iconfont icon-zu102"></div>
+    <div class="iconfont icon-zu100"></div>
+    <div class="iconfont icon-zu99"></div>
+</div>
+<div class="index-l">
+    <ul class="index-l-nav">
+        <li class="on"><span class="iconfont icon-weibiaoti-1"></span></li>
+        <li><span class="iconfont icon-zu166"></span></li>
+        <li><span class="iconfont icon-zu165"></span></li>
+    </ul>
+    <ul class="index-l-nav bottomnav">
+        <li class="on"><span class="iconfont icon-zu163"></span></li>
+        <li><span class="iconfont icon-zu162"></span></li>
+        <li><span class="iconfont icon-zu191"></span></li>
+    </ul>
+</div>
+<div class="index-r">
+    <div class="folder-main">
+      <div class="folder-cont">
+        <img src="./img/tongbu.png" alt="">
+        <p class="title">暂未设置同步内容，前往<i>设置同步文件夹</i></p>
+      </div>
+    </div>
+</div>
+
+<!-- 弹窗 -->
+<!-- 二维码 -->
+<div class="fade-qr-main" style="display:none-">
+    <div class="qr-cont">
+        <p class="title">使用AI存储手机APP<br>扫码解锁显示加密文件夹</p>
+        <img src="./img/erweima.png" class="qr-img" alt="">
+    </div>
+</div>
+
+<!-- 弹框 -->
+<div class="fade-qr-main2" style="display:none-">
+  <div class="fade-cont">
+    解锁失败，请重试
+  </div>
+</div>
+
+
+</body>
+</html>
