@@ -662,10 +662,46 @@ li.select-items-s.active {
     left: 62px;
     top: 32px;
     bottom: 0;
-    width: 200px;
+    width: 240px;
     background: #fff;
     z-index: 99;
     border-right: 1px solid #ebeef5;
+}
+.treeNav li div{
+  height: 34px;
+  line-height: 34px;
+  color: #606266;
+  font-size: 14px;
+  padding-left:15px;
+  cursor: pointer;
+}
+.treeNav li .t img{
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.treeNav li .iconfont{
+  font-size: 13px;
+  color: #a5a5a5;
+  margin-right: 5px;
+}
+.treeNav li.on{
+background: #F1F1F2;
+}
+.treeNav li:hover{
+
+  background: #F5F6F6;
+  }
+ .treeNav ul  > li{
+   /* background-color: #ff6600; */
+   padding-left:25px;
+}
+.treeNav ul > ul > li{
+  /* background-color: #f8606c; */
+  padding-left:50px;
+}
+.treeNav ul > ul > ul > li{
+  /* background-color: #ffe081; */
+  padding-left:70px;
 }
 
 /* 
@@ -1236,5 +1272,3 @@ color: #303133;
   background-color: #006df0!important;
   color: #fff;
 }
-
-
